@@ -1,0 +1,29 @@
+{
+  "name": "automation-api",
+  "version": "1.0.0",
+  "description": "restful booker api endpoints automation with supertest",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./api/test --recursive --reporter mochawesome --reporter-options reportDir=mochawesome-report --timestamp=isoDate --timeout 10000",
+    "reports": "open 'reports/mochawesome/mochawesome.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NVKPAVANKUMAR/restful_booker_api_automation.git"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/NVKPAVANKUMAR/restful_booker_api_automation#readme",
+  "author": "NVK PAVANKUMAR",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-json-schema": "^1.5.1",
+    "dotenv": "^7.0.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0",
+    "mysql": "^2.17.1",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "dummy-json": "^3.0.4"
+  }
+}
